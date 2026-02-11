@@ -14,7 +14,7 @@ Your site will appear at:
 https://YOURUSERNAME.github.io/REPO-NAME/
 
 ## Teacher Key
-teacher.html contains the master phrase and answers. Keep it private (don’t link it to students) or remove it after you copy the key.
+vault_admin_key_9f3k.html contains the master phrase and answers. Keep it private (don’t link it to students) or remove it after you copy the key.
 
 ## Editing Questions
 Open script.js and edit the locks array at the top.
