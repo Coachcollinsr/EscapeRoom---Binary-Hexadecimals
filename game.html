@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Escape Room</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Hidden clue: HEX + ASCII can spell words -->
+
+  <div class="container">
+    <div class="topbar">
+      <div id="timer"></div>
+      <div id="progress"></div>
+      <div id="attempts"></div>
+    </div>
+
+    <h1 id="lockTitle"></h1>
+    <p id="lockDirections" class="sub"></p>
+
+    <div class="panel">
+      <pre id="lockPrompt"></pre>
+    </div>
+
+    <input id="answer" type="text" placeholder="Type your answer…" autocomplete="off" />
+    <div class="row">
+      <button id="submitBtn">UNLOCK</button>
+    </div>
+
+    <p id="feedback"></p>
+
+    <hr />
+
+    <h2>Collected Letters</h2>
+    <p class="sub">Write these down. You’ll unscramble them at the end.</p>
+    <div id="letterBank" class="letterbank"></div>
+
+    <div id="masterLock" style="display:none;">
+      <hr />
+      <h2>🔒 MASTER LOCK</h2>
+      <p class="sub">Unscramble all 20 letters into a phrase (no spaces). Enter it below.</p>
+
+      <div class="panel">
+        <pre id="scrambleDisplay"></pre>
+      </div>
+
+      <input id="masterInput" type="text" placeholder="Enter master phrase…" autocomplete="off" />
+      <button id="masterBtn">SUBMIT MASTER PHRASE</button>
+      <p id="masterFeedback"></p>
+    </div>
+  </div>
+</body>
+</html>
