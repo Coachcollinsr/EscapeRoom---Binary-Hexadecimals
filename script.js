@@ -63,8 +63,8 @@ const locks = [
   {
     title: "Lock 20 (Word Puzzle)",
     directions: "Decimal ASCII → Text",
-    prompt: "Decode these decimal ASCII codes:\n66 73 78\n\nType the word:",
-    answers: ["fin"],
+    prompt: "Decode these decimal ASCII codes:\n76 83 85\n\nType the word:",
+    answers: ["LSU"],
     letter: "R",
   },
 ];
