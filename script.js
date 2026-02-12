@@ -14,23 +14,23 @@ const MASTER_PHRASE = "MasterOfBinaryAndHex"; // 20 letters, no spaces
 // answers[]: acceptable answers (case-insensitive). For hex, accept "FF" and "0xFF" if you want.
 const locks = [
   // ---------- 1–10: Conversions ----------
-  { title: "Lock 1 (Conversion)", directions: "Convert Binary → Decimal", prompt: "1011₂ = ?₁₀", answers: ["11"], letter: "R" },
-  { title: "Lock 2 (Conversion)", directions: "Convert Hex → Decimal", prompt: "2A₁₆ = ?₁₀", answers: ["42"], letter: "D" },
-  { title: "Lock 3 (Conversion)", directions: "Convert Decimal → Hex", prompt: "25₁₀ = ?₁₆", answers: ["19", "0x19"], letter: "X" },
+  { title: "Lock 1 (Conversion)", directions: "Convert Binary → Decimal", prompt: "1011₂ = ?₁₀", answers: ["11"], letter: "X" },
+  { title: "Lock 2 (Conversion)", directions: "Convert Hex → Decimal", prompt: "2A₁₆ = ?₁₀", answers: ["42"], letter: "A" },
+  { title: "Lock 3 (Conversion)", directions: "Convert Decimal → Hex", prompt: "25₁₀ = ?₁₆", answers: ["19", "0x19"], letter: "R" },
   { title: "Lock 4 (Conversion)", directions: "Convert Binary → Hex (two-step ok)", prompt: "11110000₂ = ?₁₆", answers: ["F0", "0xF0"], letter: "O" },
-  { title: "Lock 5 (Conversion)", directions: "Convert Hex → Binary", prompt: "3F₁₆ = ?₂  (no spaces)", answers: ["111111"], letter: "Y" },
-  { title: "Lock 6 (Conversion)", directions: "Convert Binary → Decimal", prompt: "100111₂ = ?₁₀", answers: ["39"], letter: "I" },
-  { title: "Lock 7 (Conversion)", directions: "Convert Decimal → Binary", prompt: "16₁₀ = ?₂  (no spaces)", answers: ["10000"], letter: "B" },
-  { title: "Lock 8 (Conversion)", directions: "Convert Binary → Decimal", prompt: "1100100₂ = ?₁₀", answers: ["100"], letter: "N" },
-  { title: "Lock 9 (Conversion)", directions: "Convert Hex → Decimal", prompt: "7B₁₆ = ?₁₀", answers: ["123"], letter: "E" },
-  { title: "Lock 10 (Conversion)", directions: "Convert Decimal → Hex", prompt: "255₁₀ = ?₁₆", answers: ["FF", "0xFF"], letter: "C" },
+  { title: "Lock 5 (Conversion)", directions: "Convert Hex → Binary", prompt: "3F₁₆ = ?₂  (no spaces)", answers: ["111111"], letter: "B" },
+  { title: "Lock 6 (Conversion)", directions: "Convert Binary → Decimal", prompt: "100111₂ = ?₁₀", answers: ["39"], letter: "T" },
+  { title: "Lock 7 (Conversion)", directions: "Convert Decimal → Binary", prompt: "16₁₀ = ?₂  (no spaces)", answers: ["10000"], letter: "N" },
+  { title: "Lock 8 (Conversion)", directions: "Convert Binary → Decimal", prompt: "1100100₂ = ?₁₀", answers: ["100"], letter: "I" },
+  { title: "Lock 9 (Conversion)", directions: "Convert Hex → Decimal", prompt: "7B₁₆ = ?₁₀", answers: ["123"], letter: "H" },
+  { title: "Lock 10 (Conversion)", directions: "Convert Decimal → Hex", prompt: "255₁₀ = ?₁₆", answers: ["FF", "0xFF"], letter: "S" },
 
   // ---------- 11–15: Definitions ----------
-  { title: "Lock 11 (Definition)", directions: "Enter the base value", prompt: "What is the base of BINARY?", answers: ["2", "base2", "base-2", "base 2"], letter: "P" },
-  { title: "Lock 12 (Definition)", directions: "Enter the base value", prompt: "What is the base of HEXADECIMAL?", answers: ["16", "base16", "base-16", "base 16"], letter: "H" },
-  { title: "Lock 13 (Definition)", directions: "Vocabulary", prompt: "A group of 4 bits is called a ______.", answers: ["nibble"], letter: "G" },
-  { title: "Lock 14 (Definition)", directions: "Vocabulary", prompt: "A group of 8 bits is called a ______.", answers: ["byte"], letter: "A" },
-  { title: "Lock 15 (Definition)", directions: "Concept check", prompt: "Hex digits after 9 are: ", answers: ["a-f", "a–f", "a to f", "abcdef"], letter: "I" },
+  { title: "Lock 11 (Definition)", directions: "Enter the base value", prompt: "What is the base of BINARY?", answers: ["2", "base2", "base-2", "base 2"], letter: "S" },
+  { title: "Lock 12 (Definition)", directions: "Enter the base value", prompt: "What is the base of HEXADECIMAL?", answers: ["16", "base16", "base-16", "base 16"], letter: "E" },
+  { title: "Lock 13 (Definition)", directions: "Vocabulary", prompt: "A group of 4 bits is called a ______.", answers: ["nibble"], letter: "F" },
+  { title: "Lock 14 (Definition)", directions: "Vocabulary", prompt: "A group of 8 bits is called a ______.", answers: ["byte"], letter: "M" },
+  { title: "Lock 15 (Definition)", directions: "Concept check", prompt: "Hex digits after 9 are: ", answers: ["a-f", "a–f", "a to f", "abcdef"], letter: "A" },
 
   // ---------- 16–20: Word / Pattern Puzzles ----------
   {
@@ -38,35 +38,35 @@ const locks = [
     directions: "Binary ASCII → Text",
     prompt: "Decode these 8-bit binary ASCII bytes:\n01000010 01001001 01010100\n\nType the word:",
     answers: ["bit"],
-    letter: "N",
+    letter: "Y",
   },
   {
     title: "Lock 17 (Word Puzzle)",
     directions: "Hex ASCII → Text",
     prompt: "Decode these hex ASCII bytes:\n48 45 58\n\nType the word:",
     answers: ["hex"],
-    letter: "O",
+    letter: "R",
   },
   {
     title: "Lock 18 (Pattern Puzzle)",
     directions: "Find the missing value (binary pattern)",
     prompt: "Pattern:\n2₁₀ → 10₂\n5₁₀ → 101₂\n?\n\nRule: write the decimal in binary.\nWhat is 6₁₀ in binary? (no spaces)",
     answers: ["110"],
-    letter: "D",
+    letter: "E",
   },
   {
     title: "Lock 19 (Puzzle)",
     directions: "Hex ↔ Binary mapping",
     prompt: "Complete the pattern:\nA₁₆ → 1010₂\nC₁₆ → 1100₂\nE₁₆ → ????₂\n\nType the 4-bit binary:",
     answers: ["1110"],
-    letter: "E",
+    letter: "N",
   },
   {
     title: "Lock 20 (Word Puzzle)",
     directions: "Decimal ASCII → Text",
     prompt: "Decode these decimal ASCII codes:\n76 83 85\n\nType the word:",
     answers: ["LSU"],
-    letter: "R",
+    letter: "A",
   },
 ];
 
