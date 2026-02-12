@@ -29,7 +29,7 @@ const locks = [
   { title: "Lock 12 (Definition)", directions: "Enter the base value", prompt: "What is the base of HEXADECIMAL?", answers: ["16", "base16", "base-16", "base 16"], letter: "H" },
   { title: "Lock 13 (Definition)", directions: "Vocabulary", prompt: "A group of 4 bits is called a ______.", answers: ["nibble"], letter: "G" },
   { title: "Lock 14 (Definition)", directions: "Vocabulary", prompt: "A group of 8 bits is called a ______.", answers: ["byte"], letter: "A" },
-  { title: "Lock 15 (Definition)", directions: "Concept check", prompt: "Hex digits after 9 are: (type as A-F)", answers: ["a-f", "a–f", "a to f", "abcdef"], letter: "I" },
+  { title: "Lock 15 (Definition)", directions: "Concept check", prompt: "Hex digits after 9 are: ", answers: ["a-f", "a–f", "a to f", "abcdef"], letter: "I" },
 
   // ---------- 16–20: Word / Pattern Puzzles ----------
   {
