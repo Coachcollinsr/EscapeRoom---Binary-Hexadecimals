@@ -73,7 +73,7 @@ const locks = [
 // GAME ENGINE (No need to edit)
 // =======================
 
-let timeLeft = 1800; // 30 minutes
+let timeLeft = 3600; // 30 minutes
 let attempts = 0;
 let idx = 0;
 let collected = [];
