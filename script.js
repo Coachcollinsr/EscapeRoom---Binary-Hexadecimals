@@ -2,11 +2,12 @@
 // EDIT HERE (Easy Revisions)
 // =======================
 
+
 // Scrambled letters students will see at the MASTER LOCK:
-const SCRAMBLED_SET = "RDXOYIBNECPHGAINODER"; // 20 letters
+const SCRAMBLED_SET = "XAROBTNIHSEDFMAYRENA";
 
 // The correct master phrase (teacher-only). Students must type this to escape:
-const MASTER_PHRASE = "BINARYHEXDECODINGPRO"; // 20 letters, no spaces
+const MASTER_PHRASE = "MasterOfBinaryAndHex"; // 20 letters, no spaces
 
 // 20 locks total.
 // Each lock: title, directions, prompt, answers[], letter
